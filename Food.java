@@ -1,32 +1,30 @@
-public class Food extends Supplies {
-
-	// Instance variables
+public class Food {
+	private String name;
+	private int quantity;
 	private boolean perishable;
 
-	// Default constructor
-	public Food() {
-		super();
-		this.setPerishable(true);
-	}
-
-	// Full constructor
+	// Constructor
 	public Food(String name, int quantity, boolean perishable) {
-		super(name, quantity);
-		this.setPerishable(perishable);
-	}
-
-	// Set
-	public void setPerishable(boolean perishable) {
+		this.name = name;
+		this.quantity = quantity;
 		this.perishable = perishable;
 	}
 
-	// Get
+	// Getters
+	public String getName() {
+		return name;
+	}
+
+	public int getQuantity() {
+		return quantity;
+	}
+
 	public boolean getPerishable() {
 		return perishable;
 	}
 
-	// toString method
-	public String toString() {
-		return "FOOD: " + this.getName() + ", PRSHBL: " + this.perishable + ", QTY: " + this.getQuantity();
+	// Setters (if needed)
+	public void setQuantity(int quantity) {
+		this.quantity = quantity;
 	}
 }
