@@ -1,30 +1,14 @@
 public class Supplies {
-
-	// Instance variables
 	private String name;
 	private int quantity;
 
-	// Default constructor
-	public Supplies() {
-		this.name = "Thing";
-		this.quantity = 0;
-	}
-
-	// Full constructor
+	// Constructor
 	public Supplies(String name, int quantity) {
-		this.setName(name);
-		this.setQuantity(quantity);
-	}
-
-	// Getters and setters
-	public void setName(String name) {
 		this.name = name;
+		this.quantity = quantity;
 	}
 
-	public void setQuantity(int qty) {
-		this.quantity = qty;
-	}
-
+	// Getters
 	public String getName() {
 		return name;
 	}
@@ -33,8 +17,8 @@ public class Supplies {
 		return quantity;
 	}
 
-	// toString method
-	public String toString() {
-		return "SUPPLIES: " + this.name + ", QTY: " + quantity;
+	// Setters (if needed)
+	public void setQuantity(int quantity) {
+		this.quantity = quantity;
 	}
 }

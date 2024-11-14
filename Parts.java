@@ -1,32 +1,30 @@
-public class Parts extends Supplies {
-
-	// instance variables
+public class Parts {
+	private String name;
+	private int quantity;
 	private int partNumber;
 
-	// Default constructor
-	public Parts() {
-		super();
-		this.setPartNumber(-1);
-	}
-
-	// Full constructor
+	// Constructor
 	public Parts(String name, int quantity, int partNumber) {
-		super(name, quantity);
-		this.setPartNumber(partNumber);
+		this.name = name;
+		this.quantity = quantity;
+		this.partNumber = partNumber;
 	}
 
-	// Set
-	public void setPartNumber(int number) {
-		this.partNumber = number;
+	// Getters
+	public String getName() {
+		return name;
 	}
 
-	// Get
+	public int getQuantity() {
+		return quantity;
+	}
+
 	public int getPartNumber() {
 		return partNumber;
 	}
 
-	// toString method
-	public String toString() {
-		return "PART: " + this.getName() + ", PN# " + this.partNumber + ", QTY: " + this.getQuantity();
+	// Setters (if needed)
+	public void setQuantity(int quantity) {
+		this.quantity = quantity;
 	}
 }
